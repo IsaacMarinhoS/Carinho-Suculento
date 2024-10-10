@@ -1,0 +1,142 @@
+/* Estilo geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #173617;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.navbar a:hover {
+  color: #d8f3dc;
+}
+
+/* Seção de contato */
+.contato-container {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 1200px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #173617;
+  margin-bottom: 40px;
+}
+
+.contact-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.contact-item {
+  background-color: #e9f5ee;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.contact-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.contact-item h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.contact-item:hover {
+  transform: scale(1.05);
+  background-color: #d8f3dc;
+}
+
+/* Mapa */
+.mapa {
+  margin-top: 40px;
+}
+
+.mapa h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.mapa iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 350px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column; /* Empilha o logo e a navegação */
+    align-items: center;
+  }
+
+  .navbar {
+    margin-top: 10px; /* Espaçamento entre logo e navbar */
+  }
+  .contact-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-item {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .mapa iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
